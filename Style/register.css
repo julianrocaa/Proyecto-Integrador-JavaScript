@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geologica";
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: #005f73;
+  background-image: linear-gradient(43deg, #005f73 0%, #0a9396 17%, #94d2bd 39%, #e9d8a6 60%, #ee9b00 80%, #ca6702 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.register-info {
+  width: 450px;
+  background: #212529;
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.register-info h4 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.controls {
+  width: 100%;
+  background: #212529;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid white;
+  font-size: 18px;
+  color: white;
+}
+
+.register-info p {
+  height: 40px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 40px;
+  font-weight: 300;
+}
+
+.register-info p:last-child {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.register-info .botons {
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  border: solid grey 4px;
+  padding: 12px;
+  color: black;
+  margin: 16px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.error {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: red;
+  padding-top: 20px;
+}

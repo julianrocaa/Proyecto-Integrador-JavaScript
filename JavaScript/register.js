@@ -1,0 +1,5 @@
+const nombre = document.getElementById("nombres")
+const apellido = document.getElementById("apellidos")
+const usuario = document.getElementById("usuario")
+const correo = document.getElementById("correo")
+const password = document.getElementById("password")

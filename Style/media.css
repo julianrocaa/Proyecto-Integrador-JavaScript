@@ -1,0 +1,310 @@
+@media (max-width: 992px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .cart-icon {
+        height: 30px;
+        margin-right: 0rem;
+        margin-top: 4px;
+    }
+
+    .cart-bubble {
+    top: 20px;
+    right: 45px;
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 85px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        border-radius: 0px 0px 15px 15px;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+        background: var(--gamboge);
+    }
+
+    .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+    }
+
+    .menu-label img {
+        height: 20px;
+        width: 25px;
+    }
+
+    #menu-toggle:checked+.navbar-list {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+
+    /* PORTADA */
+
+    #portada {
+        background-size: 100% 600px;
+        padding: 100px;
+    }
+
+    .portada-info h1 {
+        padding-top: 180px;
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    .portada-info p {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    /* ABOUT US */
+
+    #nosotros {
+        display: flex;
+        justify-content: center;
+        padding-top: 90px;
+    }
+
+    .nosotros-info {
+        height: 250px;
+        width: 550px;
+
+    }
+
+    .nosotros-info h2 {
+        font-weight: 900;
+        font-size: 25px;
+    }
+
+    .nosotros-info p {
+        font-size: 18px;
+        font-weight: 300;
+        padding-top: 5px;
+    }
+
+    /* PRODUCTOS */
+
+    .products-container {
+        width: 100%;
+    }
+
+    .product {
+        width: 50%;
+    }
+
+    .product img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* CONTACTOS */
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* REGISTER */
+
+    #register {
+        margin-top: 250px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .register-info {
+        width: 100%;
+    }
+
+    /* LOGIN */
+
+    #login {
+        padding: 100px;
+        margin-top: 350px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    /* PORTADA */
+
+    #portada {
+
+        background-size: 100% 500px;
+        padding: 60px;
+
+    }
+
+    .portada-info h1 {
+        padding-top: 180px;
+        font-size: 25px;
+        font-weight: 900;
+
+    }
+
+    .portada-info p {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    /* REGISTER */
+
+    #register {
+        padding: 30px;
+        margin-top: 150px;
+    }
+
+    .register-info {
+        width: 100%;
+    }
+
+    /* LOGIN */
+
+    #login {
+        margin-top: 250px;
+        padding: 80px;
+
+    }
+
+    .login-info {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    /* PORTADA */
+
+    #portada {
+        background-size: 190% 100%;
+        padding: 35px;
+    }
+
+    .portada-info h1 {
+        padding-top: 350px;
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .portada-info p {
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    /* ABOUT US */
+
+    .nosotros-info {
+        height: 90%;
+        width: 90%;
+        padding: 15PX;
+
+    }
+
+    .nosotros-info h2 {
+        font-weight: 900;
+        font-size: 25px;
+    }
+
+    .nosotros-info p {
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+    /* PRODUCTOS */
+
+    #products h2 {
+        font-size: 35px;
+    }
+
+    .product {
+        width: 110%;
+    }
+
+    /* CONTACTOS */
+
+    #contactos h2 {
+        font-size: 35px;
+    }
+
+    .contact-info {
+        padding: 0px;
+    }
+
+
+    /* REGISTER */
+
+    #register {
+        padding: 20px;
+        margin-top: 80px;
+    }
+
+    .register-info {
+        width: 100%;
+    }
+
+    .register-info p {
+        font-size: 22px;
+    }
+
+    .register-info p:last-child {
+        font-size: 17px;
+    }
+
+
+    /* LOGIN */
+
+    #login {
+        margin-top: 170px;
+        padding: 15px;
+    }
+
+    .login-info {
+        width: 100%;
+    }
+
+    .login-info h4 {
+        font-size: 30px;
+    }
+
+    ::placeholder {
+        font-size: 20PX;
+    }
+
+    .login-info p {
+        font-size: 22px;
+    }
+
+    .login-info p:last-child {
+        font-size: 17px;
+    }
+
+}

@@ -1,0 +1,340 @@
+/* TIPOGRAFÍA Y COLORES */
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --rich-black: #001219ff;
+    --midnight-green: #005f73ff;
+    --dark-cyan: #0a9396ff;
+    --tiffany-blue: #94d2bdff;
+    --vanilla: #e9d8a6ff;
+    --gamboge: #ee9b00ff;
+    --alloy-orange: #ca6702ff;
+    --rust: #bb3e03ff;
+    --rufous: #ae2012ff;
+    --auburn: #9b2226ff;
+}
+
+/* CUERPO DEL CÓDIGO */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Geologica";
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* HEADER */
+
+header {
+    background: var(--gamboge);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    padding: 0px 20px 0px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    height: 80%;
+    margin-top: 9px;
+}
+
+.cart-icon {
+    height: 40%;
+    cursor: pointer;
+}
+
+.cart-bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    background: white;
+    color: black;
+    font-size: 10px;
+    font-weight: 900;
+    border-radius: 50%;
+  }
+
+/* NAVBAR */
+
+.navbar,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    gap: 30px;
+}
+
+.navbar-list {
+    gap: 30px;
+}
+
+.navbar-list a {
+    font-weight: 800;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+#menu-toggle,
+.menu-label {
+    display: none;
+}
+
+/* PORTADA */
+
+#portada {
+    background-image: url(/assets/T-Shirt_Mockup_MockupsForFree.png);
+    box-shadow: 1px 10px 37px grey;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 100% 740px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 250px;
+    padding-bottom: 80px;
+}
+
+.portada-info span {
+    background-color: #ca6702;
+    background-image: linear-gradient(43deg, #ca6702 0%, #ee9b00 19%, #94d2bd 60%, #0a9396 80%, #005f73 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.portada-info h1 {
+    padding-top: 100px;
+    font-size: 37px;
+    font-weight: 900;
+
+}
+
+.portada-info p {
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* ABOUT US  */
+
+#nosotros {
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+.nosotros-info {
+    height: 180px;
+    width: 1000px;
+    background-color: var(--vanilla);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.nosotros-info h2 {
+    -webkit-text-stroke: 1.5px black;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.nosotros-info p {
+    font-weight: 300;
+    padding-top: 12px;
+}
+
+
+/* SECCIÓN DE PRODUCTOS */
+
+#products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#products h2 {
+    padding-top: 30px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.categorias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+.categorias button {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.category {
+   background: white;
+    border: solid black 3px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px 40px;
+    max-width: 1200px;
+}
+
+.product {
+    width: 350px;
+    background: var(--vanilla);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.img-products {
+    border-radius: 10px;
+    height: 360px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-top,
+.product-bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botones-talles button {
+    border: none;
+    border: 2px solid black;
+    background: white;
+    padding: 6px 10px;
+}
+
+.agregar-al-carrito {
+    width: 80px;
+    height: 40px;
+    font-size: 13px;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* SECCIÓN DE CONTACTOS */
+
+#contactos h2 {
+    font-size: 50px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 50px;
+}
+
+.contact-info h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #ca6702;
+    background-image: linear-gradient(43deg, #ca6702 0%, #ee9b00 19%, #94d2bd 60%, #0a9396 80%, #005f73 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 900;
+    font-size: 22px;
+    border-radius: 13px;
+    padding-bottom: 10px;
+}
+
+.contact-img img {
+    height: 25px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #e9d8a6 50%, #ee9b00 100%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: var(--outer-space);
+    height: 130px;
+    margin-top: 50px;
+}
+
+.footer-info img {
+    width: 90px;
+    padding-top: 28px;
+}
+
+.footer-info p {
+    color: #343a40;
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-img img {
+    width: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-inline: 15px;
+    cursor: pointer;
+}
